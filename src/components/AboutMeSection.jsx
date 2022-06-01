@@ -3,6 +3,12 @@ import Github from '../image/github-icon.svg';
 import Linleding from '../image/linkedin-icon.svg';
 import Picture from '../image/undraw_personal_info_re_ur1n.svg';
 function AboutMeSection({className}) {
+  const handleGit = () =>{
+    window.open('https://github.com/Qnosin', '_blank');
+  }
+  const handleLin = () =>{
+    window.open('https://www.linkedin.com/in/jakub-putaj-531094216/', '_blank');
+  }
   return (
     <section className={className}>
       <div className='wrapper'>
@@ -15,10 +21,10 @@ function AboutMeSection({className}) {
       </div>
         <div>
           <div className='github'>
-          <img src={Github} alt='Github'></img>
+          <img onClick={handleGit} src={Github} alt='Github'></img>
           <p>/Qnosin</p>
           </div>
-          <img src={Linleding} alt="Linkedin" />
+          <img onClick={handleLin} src={Linleding} alt="Linkedin" />
           <p>/jakub-putaj</p>
         </div>
         </section>
