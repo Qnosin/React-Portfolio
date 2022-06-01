@@ -18,7 +18,7 @@ function ProjectSecond() {
         <p className='project__title__description'>Calculator, but with react-router to made it more interesting</p>
         </div>
         <div className='created__with__desc'>
-            <p>Created with: <img src={reactPhoto}></img><img src={html}></img><img src={css}></img></p>
+            <p>Created with: <img alt='react' src={reactPhoto}></img><img alt='html' src={html}></img><img alt='css' src={css}></img></p>
             <div className='buttons'>
             <button onClick={handleClick}>🔴 Live</button>
             <GitHubButton href="https://github.com/Qnosin/React-Calculator" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-eye" aria-label="Watch Qnosin/React-Calculator on GitHub">Github</GitHubButton>
