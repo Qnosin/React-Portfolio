@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import Projects from './pages/Projects';
+import ErrorPage from './pages/ErrorPage';
 function App() {
   return (
     <AppContainer>
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home />}></Route>
           <Route path='/aboutme' element={<AboutMe />}></Route>
           <Route path='/projects' element={<Projects />}></Route>
+          <Route path='*' element={<ErrorPage />}></Route>
         </Routes>
       </Router>
     </AppContainer>
