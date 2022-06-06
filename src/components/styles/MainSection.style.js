@@ -70,6 +70,10 @@ export const MainSectionStyled = styled(MainSection)`
             top: 35%;
             left: 90%;
         }
+        .redux{
+            width: 14%;
+            left: 10%;
+        }
 
     }
     & section h1{
