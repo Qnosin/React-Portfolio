@@ -4,12 +4,13 @@ import reactPhoto from '../image/reactjs-icon.svg';
 import html from '../image/w3_html5-icon.svg';
 import css from '../image/css3-plain.svg';
 import GitHubButton from 'react-github-btn';
+import {motion} from 'framer-motion';
 function ProjectFirst() {
   const handleClick = () =>{
     window.open('https://eloquent-raindrop-c31338.netlify.app', '_blank');
   }
   return (
-    <div className='first__Project'>
+    <motion.div animate={{scale:1}} initial={{scale:0}} transition={{type:'tween'}} className='first__Project'>
           <img className='finder__project' src={gitFinder} alt='github finder app'></img>
           <div className='Project__desc'>
             <div className='project__title'>
@@ -24,7 +25,7 @@ function ProjectFirst() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
   )
 }
 

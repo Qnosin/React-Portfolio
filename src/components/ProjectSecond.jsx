@@ -4,13 +4,14 @@ import html from '../image/w3_html5-icon.svg';
 import reactPhoto from '../image/reactjs-icon.svg';
 import css from '../image/css3-plain.svg';
 import GitHubButton from 'react-github-btn';
+import {motion} from 'framer-motion';
 
 function ProjectSecond() {
   const handleClick = () =>{
     window.open('https://inquisitive-douhua-bb72ca.netlify.app', '_blank');
   }
   return (
-    <div className='Second__Project'>
+    <motion.div animate={{scale:1}} initial={{scale:0}} transition={{type:'tween'}} className='Second__Project'>
     <img src={calculator} alt='Calculator App'></img>
     <div className='Project__desc'>
         <div className='project__title'>
@@ -25,7 +26,7 @@ function ProjectSecond() {
         </div>
     </div>
 </div>
-</div>
+</motion.div>
   )
 }
 

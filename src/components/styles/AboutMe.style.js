@@ -46,5 +46,9 @@ export const AboutMeStyled = styled(AboutMeSection)`
     }
     & .github{
         margin-bottom: 2rem;
+        cursor: pointer;
+    }
+    & img[alt='Linkedin']{
+        cursor: pointer;
     }
 `

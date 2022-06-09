@@ -5,12 +5,13 @@ import scss from '../image/sass-lang-icon.svg';
 import firebase from '../image/firebase-icon.svg';
 import GitHubButton from 'react-github-btn';
 import shoesStoreApp from '../image/shoes store apps.PNG';
+import {motion} from 'framer-motion';
 function ProjectThird() {
     const handleClick = () =>{
         window.open('https://darling-buttercream-a92fbe.netlify.app/', '_blank');
       }
   return (
-    <div className='third__Project'>
+    <motion.div animate={{scale:1}} initial={{scale:0}} transition={{type:'tween'}} className='third__Project'>
     <img className='shoes__store__picture' src={shoesStoreApp} alt='Shoes Store'></img>
         <div className='Project__desc'>
             <div className='project__title'>
@@ -25,7 +26,7 @@ function ProjectThird() {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import Github from '../image/github-icon.svg';
 import Linleding from '../image/linkedin-icon.svg';
 import Picture from '../image/undraw_personal_info_re_ur1n.svg';
+import {motion} from 'framer-motion';
 function AboutMeSection({className}) {
   const handleGit = () =>{
     window.open('https://github.com/Qnosin', '_blank');
@@ -21,10 +22,10 @@ function AboutMeSection({className}) {
       </div>
         <div>
           <div className='github'>
-          <img onClick={handleGit} src={Github} alt='Github'></img>
+          <motion.img animate={{rotate:360}}   transition={{type:'tween'}} onClick={handleGit} src={Github} alt='Github'></motion.img>
           <p>/Qnosin</p>
           </div>
-          <img onClick={handleLin} src={Linleding} alt="Linkedin" />
+          <motion.img animate={{rotate:360}}   transition={{type:'tween'}} onClick={handleLin} src={Linleding} alt="Linkedin" />
           <p>/jakub-putaj</p>
         </div>
         </section>
