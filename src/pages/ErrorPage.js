@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Header from '../components/Header'
 import { useNavigate } from 'react-router-dom'
 function ErrorPage() {
     let navigate = useNavigate()
