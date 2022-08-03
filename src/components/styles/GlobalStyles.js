@@ -10,6 +10,8 @@ export const GlobalStyles = createGlobalStyle`
     }
     body{
         min-height: 100vh;
-        overflow: hidden;
+        @media screen and (min-width:800px) {
+            overflow: hidden;
+        }
     }
 `
